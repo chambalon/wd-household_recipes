@@ -72,6 +72,15 @@ body{
   color: rgb(71, 20, 20);
 }
 
+.main a{
+  text-decoration: none;
+  color: rgb(71, 20, 20);
+}
+
+.main a:hover{
+  color: rgb(126, 30, 30);
+}
+
 .footer{
   background-color: #25201b;
   color: #625f5c;
