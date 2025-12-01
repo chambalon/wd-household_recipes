@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-  width: 1300px;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,9 +80,12 @@ main p{
 }
 
 ul li{
-  flex: 1 0 0;
   margin-bottom: 17px;
   margin-left: 35px;
+}
+
+.instructions{
+  margin-bottom: 25px;
 }
 
 .footer{
@@ -91,4 +94,13 @@ ul li{
   justify-content: flex-end;
 }
 
+@media (max-width: 768px) {
+  .row{
+    flex-direction: column;
+  }
 
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -62,11 +62,11 @@ body{
 
 .side a, .main a{
   text-decoration: none;
-  color: rgb(184, 10, 10);
+  color: rgb(158, 16, 16);
 }
 
 .side a:hover{
-  color: rgb(224, 21, 21);
+  color: rgb(195, 23, 23);
 }
 
 .main{
@@ -78,11 +78,11 @@ body{
 
 .side h3, .main h3{
   padding-bottom: 5px;
-  color: rgb(184, 10, 10);
+  color: rgb(158, 16, 16);
 }
 
 .main a:hover{
-  color: rgb(224, 21, 21);
+  color: rgb(195, 23, 23);
 }
 
 .footer{
