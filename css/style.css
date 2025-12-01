@@ -60,6 +60,15 @@ body{
   padding: 55px;
 }
 
+.side a, .main a{
+  text-decoration: none;
+  color: rgb(184, 10, 10);
+}
+
+.side a:hover{
+  color: rgb(224, 21, 21);
+}
+
 .main{
   background-color: rgb(235, 232, 229);
   flex: 55%;
@@ -69,16 +78,11 @@ body{
 
 .side h3, .main h3{
   padding-bottom: 5px;
-  color: rgb(71, 20, 20);
-}
-
-.main a{
-  text-decoration: none;
-  color: rgb(71, 20, 20);
+  color: rgb(184, 10, 10);
 }
 
 .main a:hover{
-  color: rgb(126, 30, 30);
+  color: rgb(224, 21, 21);
 }
 
 .footer{

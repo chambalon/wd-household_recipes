@@ -41,6 +41,10 @@ body{
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+#signup-container{
+  margin: 93px auto;
+}
+
 .container h2{
   margin-bottom: 50px;
   color: rgb(121, 32, 32);
