@@ -27,9 +27,9 @@ body{
 }
 
 .navbar{
-  background-color: #292928;
+  background-color: #292928a9;
   overflow: hidden;
-  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); 
 }
 
 .navbar a{
@@ -88,8 +88,26 @@ body{
 .footer{
   background-color: #25201b;
   color: #625f5c;
-  text-align: left;
-  padding: 55px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul li{
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.footer img{
+  width: 33px;
+  height: 29px;
+}
+
+.footer img:hover{
+  background-color: #625f5c;
 }
 
 @media screen and (max-width:700px) {

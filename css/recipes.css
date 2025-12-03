@@ -9,6 +9,7 @@ body{
   display: flex;
   width: auto;
   flex-direction: column;
+  gap: 30px;
   padding: 30px;
   justify-content: center;
   align-items: center;
@@ -17,13 +18,36 @@ body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.navbar{
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar a{
+  color: rgb(251, 209, 41);
+  display: block;
+  float: left;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover{
+  color: #d5c9c9;
+}
+
 .container{
   max-width: 1300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 50px 70px;
-  background: rgb(239, 239, 238);
+  background: #fff;
   border-radius: 25px;
 }
 
@@ -68,12 +92,12 @@ main .row .right img{
 }
 
 .dish h2{
-  color: rgb(114, 43, 43);
+  color: rgb(212, 117, 17);
   margin-bottom: 5px;
 }
 
 main p{
-  color: rgb(114, 43, 43);
+  color:  rgb(158, 25, 25);
   font-weight: 650;
   margin-bottom: 15px;
   margin-top: 29px;
@@ -86,12 +110,36 @@ ul li{
 
 .instructions{
   margin-bottom: 25px;
+  background-color: rgb(248, 242, 246);
+  border-radius: 10px;
+  padding: 15px;
 }
 
+
 .footer{
-  margin-top: 15px;
-  color: rgb(92, 90, 90);
-  justify-content: flex-end;
+  width: 100%;
+  background-color: transparent;
+  color: #625f5c;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul li{
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.footer img{
+  width: 33px;
+  height: 29px;
+}
+
+.footer img:hover{
+  background-color: #625f5c;
 }
 
 @media (max-width: 768px) {
