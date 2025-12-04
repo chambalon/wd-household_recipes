@@ -11,16 +11,30 @@
     <h1>Household Recipes</h1>
     <p>Browse routine, quick fix, and special occasion recipes</p>
   </div>
-
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="simple and delicious.html">Simple & Delicious</a>
-    <a href="dinner sorted.html">Dinner Sorted</a>
-    <a href="recipe cards.html">All Recipes</a>
-    <a href="contact.html"><span>Contact Us</span></a>
-    <a class="right" href="signup.html">Sign up</a>
-    <a class="right" href="login.html">Login</a>
+  
+  <div class="links">
+    <div class="navbar">
+      <a class="hideOnMobile" href="index.html">Home</a>
+      <a class="hideOnMobile" href="simple and delicious.html">Simple & Delicious</a>
+      <a class="hideOnMobile" href="dinner sorted.html">Dinner Sorted</a>
+      <a class="hideOnMobile" href="recipe cards.html">All Recipes</a>
+      <a class="hideOnMobile" href="contact.html"><span>Contact Us</span></a>
+      <a class="hideOnMobile" id="rightSign" href="signup.html">Sign up</a>
+      <a class="hideOnMobile" id="rightLog" href="login.html">Login</a>
+      <a id="rightBtn" class="menubutton" onclick="toggleSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill=" rgb(241, 226, 165)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+    </div>
+    <div class="sidebar" id="sideBar">
+      <a class="sidebarLink" id="closebutton" onclick="toggleSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="rgb(241, 226, 165)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <a class="sidebarLink" href="index.html">Home</a>
+      <a class="sidebarLink" href="simple and delicious.html">Simple & Delicious</a>
+      <a class="sidebarLink" href="dinner sorted.html">Dinner Sorted</a>
+      <a class="sidebarLink" href="recipe cards.html">All Recipes</a>
+      <a class="sidebarLink" href="contact.html"><span>Contact Us</span></a>
+      <a class="sidebarLink" href="signup.html">Sign up</a>
+      <a class="sidebarLink" href="login.html">Login</a>
+    </div>
   </div>
+  
 
   <div class="row">
     <div class="side">
@@ -47,5 +61,6 @@
     <p>Copyright © Household Recipes - All Rights Reserved</p>
   </div>
   
+  <script src="script.js"></script>
 </body>
 </html>

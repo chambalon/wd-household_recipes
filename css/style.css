@@ -5,49 +5,97 @@
 }
 
 body{
-  background-color: #292727;
+  background-color: #7c7979;
   color: rgb(40, 39, 39);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .header{
-  padding: 220px;
+  padding: 220px 10px;
   height: 100px;
   text-align: center;
   color: rgb(190, 108, 19);
-  background: url("../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .header h1{
+  width: 100%;
   font-size: 35px;
   padding-top: 30px;
+  text-align: center;
+}
+
+.header p{
+  width: 100%;
+  text-align: center;
+}
+
+.header p{
+  align-self: stretch;
+  text-align: center;
+}
+
+.links{
+  position: relative;
 }
 
 .navbar{
+  z-index: 10;
+  position: relative;
+}
+
+.navbar, .sidebar{
   background-color: #292928a9;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); 
 }
 
-.navbar a{
-  color: rgb(251, 209, 41);
+.navbar a, .sidebar a{
+  color: rgb(241, 226, 165);
   display: block;
   float: left;
-  padding: 15px 20px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
 }
 
-.navbar a.right {
-  float: right;
+.navbar a#rightBtn, .navbar a#rightLog, .navbar a#rightSign{
+  float:right;
 }
 
 .navbar a:hover{
   color: #d5c9c9;
 }
+
+.sidebar {
+  position: absolute;
+  width: 250px;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  margin-top:0;
+  display: none;
+}
+
+.sidebar.visible{
+  display: block;
+}
+
+.sidebar a{
+  width: 100%;
+  color: rgb(241, 226, 165);
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.navbar .menubutton{
+  display: none;
+}
+
 
 .row{
   display: flex;
@@ -110,15 +158,23 @@ body{
   background-color: #625f5c;
 }
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:768px) {
+  .navbar .hideOnMobile{
+    display: none;
+  }
+
+  .navbar .menubutton{
+    display: inline-block;
+  }
+
   .row{
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:400px){
-  .navbar a{
-    float: none;
+@media screen and (max-width:480px){
+  .sidebar{
     width: 100%;
   }
 }
