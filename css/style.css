@@ -48,7 +48,7 @@ body{
 }
 
 .navbar, .sidebar{
-  background-color: #292928a9;
+  background-color: #35180d;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); 
 }
@@ -78,6 +78,7 @@ body{
   right: 0;
   margin-top:0;
   display: none;
+  background-color: #292928a9;
 }
 
 .sidebar.visible{
@@ -89,7 +90,7 @@ body{
   color: rgb(241, 226, 165);
   padding: 15px 15px;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
 }
 
 .navbar .menubutton{
@@ -122,6 +123,7 @@ body{
   flex: 55%;
   padding: 55px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .side h3, .main h3{
