@@ -48,12 +48,12 @@ body{
 }
 
 .navbar, .sidebar{
-  background-color: #35180d;
+  background-color: #858280;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a, .sidebar a{
+.navbar a{
   color: rgb(241, 226, 165);
   display: block;
   float: left;
@@ -91,6 +91,8 @@ body{
   padding: 15px 15px;
   text-decoration: none;
   text-align: center;
+  float: none;
+  clear: both;
 }
 
 .navbar .menubutton{
