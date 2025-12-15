@@ -13,7 +13,7 @@ body{
   display: flex;
   flex-direction: column;
 }
-
+/*
 .navbar{
   overflow: hidden;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@ body{
 
 .navbar a:hover{
   color: #d5c9c9;
-}
+}*/
 
 main{
   display: grid;
